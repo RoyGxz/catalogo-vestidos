@@ -1,1 +1,228 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestidos | Mi Colección</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff9fb;
+            color: #49343d;
+        }
+
+        header {
+            background: white;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f2dce5;
+        }
+
+        .logo {
+            color: #a65d7b;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #765361;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        .portada {
+            background: #f6e1e9;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .portada h1 {
+            color: #874c65;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .portada p {
+            color: #815d6c;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #ad6682;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .coleccion {
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        .coleccion h2 {
+            color: #874c65;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .coleccion > p {
+            color: #947984;
+            margin-bottom: 30px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 3px 15px #eadce2;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+        }
+
+        .detalle {
+            padding: 18px;
+        }
+
+        .detalle h3 {
+            color: #70485a;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            color: #ad6682;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .estado {
+            display: inline-block;
+            margin-top: 12px;
+            background: #f9e8ef;
+            color: #9c5875;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        footer {
+            background: #f3dce6;
+            color: #80596a;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .portada h1 {
+                font-size: 29px;
+            }
+
+            .productos {
+                grid-template-columns: 1fr;
+            }
+
+            .producto img {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MI COLECCIÓN</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#vestidos">Vestidos</a>
+        </nav>
+    </header>
+
+    <section class="portada" id="inicio">
+        <h1>Encuentra tu vestido ideal</h1>
+        <p>Elegancia, estilo y belleza para cada ocasión.</p>
+        <a href="#vestidos" class="boton">Ver colección</a>
+    </section>
+
+    <section class="coleccion" id="vestidos">
+        <h2>Nuestra colección</h2>
+        <p>Descubre nuestros vestidos favoritos.</p>
+
+        <div class="productos">
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=700"
+                     alt="Vestido elegante">
+                <div class="detalle">
+                    <h3>Vestido elegante</h3>
+                    <p class="precio">S/ 120.00</p>
+                    <span class="estado">Disponible</span>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=700"
+                     alt="Vestido de fiesta">
+                <div class="detalle">
+                    <h3>Vestido de fiesta</h3>
+                    <p class="precio">S/ 150.00</p>
+                    <span class="estado">Disponible</span>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=700"
+                     alt="Vestido moderno">
+                <div class="detalle">
+                    <h3>Vestido moderno</h3>
+                    <p class="precio">S/ 95.00</p>
+                    <span class="estado">Disponible</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Colección - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
